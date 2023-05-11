@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    tools:ignore="UseCompoundDrawables">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewUserItem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hacker"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvUserFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:layout_marginStart="12dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/imageViewUserItem"
+        android:layout_toEndOf="@+id/imageViewUserItem" />
+
+    <TextView
+        android:id="@+id/tvUserLastActiveTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20:50 PM"
+        android:textSize="12sp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignStart="@+id/tvUserFullName"
+        android:layout_below="@+id/tvUserFullName"
+        android:textColor="#E91E63" />
+
+    <TextView
+        android:id="@+id/tvUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="active"
+        android:textSize="14sp"
+        android:layout_marginEnd="12dp"
+        android:textColor="#8BC34A"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:background="#4D989595"/>
+
+</RelativeLayout>
